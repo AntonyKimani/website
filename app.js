@@ -5,6 +5,7 @@ const navClose = document.querySelector('.nav-close');
 if(navToggle){
     navToggle.addEventListener('click' , ()=>{
         navMenu.classList.add("show-menu");
+
     })
 }
 if(navClose){
