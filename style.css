@@ -8,17 +8,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 
-.code-icon img{
-    width:10px;
+#code-icon img{
+    width:30px;
     height:auto;
+}
+.nav-bar{
+    font-size:30px;
+    color:rgb(6, 49, 49);
+    padding:20px;
+    z-index:3000;
+}
+.nav-bar h3{
+    font-size:50px;
+    padding:20px;
+    font-family:'The Nautigal';
+}
+.nav-bar p{
+    font-size:20px;
+    position:relative;
+    left:30em;
 }
 .nav-toggle{
     float:right;
+    display:none;
 }
 .nav-toggle img{
     width:10px;
     height:auto;
     padding:10px;
+}
+.nav-close{
+    display:none;
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    position:relative;
+    bottom:7em;
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li a{
+    font-size:20px;
+    padding:0 30px;
+    text-decoration:none;
+    color:rgb(0, 49, 0);
+    font-weight:500;
+}
+nav ul li a:hover{
+    color:green;
+}
+.telephone-btn{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    bottom:6em;
+    left:19em;
+}
+.telephone-btn p{
+    position:absolute;
+    left:40px;
+    padding:10px;
+
+}
+.telephone-btn img{
+   
+}
+.telephone-button{
+    padding:10px;
+    border-radius:30px;
+    border:none;
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+    transition:.5s ease-in-out;
+}
+.telephone-button:hover{
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+    transform:translateY(-10px);
+    cursor:pointer;
+}
+.home-bar img{
+    width:100%;
+    z-index:500;
 }
 @media(max-width:425px){
     body{
