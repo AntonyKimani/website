@@ -6,7 +6,182 @@
     scroll-behavior: smooth;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+html{
+        
+}
+body{
+    background:url('images/enthusiastic-positive-artist-with-bun-her-head-holding-dirty-palette-one-hand-set-art-brushes.jpg');
+    background-size:220vh;
+    background-position:cover;
+    background-repeat:no-repeat;
+    max-width:100%;
+}
 
+#code-icon img{
+    width:30px;
+    height:auto;
+}
+.nav-bar {
+    font-size:30px;
+    color:rgb(6, 49, 49);
+    padding:20px;
+    z-index:3000;
+}
+.nav-bar h1{
+    font-size:90px;
+    font-weight:800;
+    color:black;
+    position:relative;
+    left:40px;
+}
+.nav-bar h3{
+    font-size:70px;
+    padding:20px;
+    font-family:'The Nautigal';
+}
+.nav-bar p{
+    font-size:40px;
+    position:relative;
+    left:30em;
+}
+.nav-toggle{
+    float:right;
+    display:none;
+}
+.nav-toggle img{
+    width:10px;
+    height:auto;
+    padding:10px;
+}
+.nav-close{
+    display:none;
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    position:relative;
+    bottom:18em;
+    left:1.5em;
+}
+nav ul li{
+    list-style:none;
+}
+#space{
+    padding:0px 100px;
+
+}
+nav ul li a{
+    font-size:20px;
+    text-decoration:none;
+    color:white;
+    text-transform:uppercase;
+    font-weight:500;
+    padding:5px 50px;
+}
+nav ul li a:hover{
+    border-radius:15px;
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+    padding:5px 50px;
+    transition:.3s ease-in-out;
+    color:white;
+}
+nav ul li a:active{
+    border-radius:15px;
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+    padding:5px 50px;
+    transition:.3s ease-in-out;
+    color:white;
+}
+
+.telephone-btn{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    bottom:18em;
+    left:40em;
+    padding:0px 10px;
+
+}
+.telephone-btn p{
+    display:none;
+    position:absolute;
+    left:40px;
+    padding:10px;
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+}
+.telephone-btn p:hover{
+   
+}
+.telephone-button{
+    padding:10px;
+    border-radius:30px;
+    border:none;
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+    transition:.5s ease-in-out;
+}
+.telephone-button:hover{
+    box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
+    transform:translateY(-10px);
+    cursor:pointer;
+}
+.home-bar{
+    position:relative;
+    color:white;
+    top:8em;
+    align-items: center;
+    text-align:center;
+}
+.home-bar h1{
+    font-size:2em;
+}
+.home-bar p{
+    position:relative;
+
+}
+.home-bar span{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-gap:10%;
+}
+.home-bar h2{
+    font-size:2em;
+}
+
+.portfolio{
+    position:relative;
+    top:9em;
+    display:grid;
+    grid-template-columns:30% 30% 30%;
+    padding:20px;
+    border:1px #ccc;
+
+}
+.portfolio img{
+    width:100px;
+    color:white;
+    padding:5px;
+    border-radius:50%;
+    height:100px;
+}
+#portfolio-1 img{
+    background:rgb(2, 112, 2);
+    color:white;
+}
+#portfolio-2 img{
+    background:yellow;
+}
+#portfolio-3 img{
+    background:red;
+}
+.portfolio h3{
+    font-size:35px;
+    padding:10px;
+}
+.portfolio p{
+    font-size:25px;
+    padding:10px;
+}
 @media(max-width:1920px){
     html{
         
@@ -188,11 +363,12 @@
 @media(max-width:425px){
     body{
         background:url('images/enthusiastic-positive-artist-with-bun-her-head-holding-dirty-palette-one-hand-set-art-brushes.jpg');
-        background-size:400vh;
-        background-position:-700px 0px;
+        background-size:180vh;
+        height:100vh;
+        background-position:-350px 0px;
         background-repeat:no-repeat;
         max-width:100%;
-
+        z-index:1000;
     }
     
     .code-icon{
@@ -221,6 +397,9 @@
     .nav-bar h1{
         color:rgb(6, 49, 49);
         padding:20px;
+        font-size:60px;
+        position:absolute;
+        left:10px;
     }.nav-bar p{
         color:rgb(6, 49, 49);
         font-size:30px;
@@ -236,7 +415,7 @@
         border:none;
         margin:10px;
         transition:.5s ease-in-out;
-        background:transparent;
+        background:red;
         box-shadow:9px 9px 16px rgba(163,177,198,0.6) , -10px -10px 15px rgba(255,255,255,0.5);
         padding:10px;
         margin:0;
@@ -299,6 +478,10 @@
     .telephone-btn{
         display:none;
     }
+    .home-bar{
+        position:relative;
+        top:22.5em;
+    }
     .home-bar img{
         width:375px;
         position:relative;
@@ -328,11 +511,15 @@
         text-align:center;
         border-bottom:1px #ccc solid;
     }
+    .portfolio-bar{
+        position:relative;
+        top:10em;
+    }
     .portfolio{
         display:flex;
         flex-direction:row;
         padding:20px;
-        border:1px #ccc 
+        border:1px #ccc;
     }
     .portfolio img{
         width:40px;
